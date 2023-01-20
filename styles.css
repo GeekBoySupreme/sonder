@@ -10,6 +10,7 @@
   width: 100%;
   height: 20vh;
   transition : all 0.6s ease;
+  animation: fade 2s linear;
 }
 
 body {
@@ -26,7 +27,7 @@ body {
 }
 
 .small-text {
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 2%;
   line-height: 24px;
   word-spacing: 1.7px;
@@ -97,7 +98,7 @@ body {
 
 
 .link-button {
-  font-size: 16px;
+  font-size: 14px;
   color: black;
   line-height: 28px;
   word-spacing: 1.7px;
@@ -128,9 +129,7 @@ body {
                 90deg,
                 var(--color-two),
                 var(--color-one),
-                var(--color-two)
-              ) 0 0 / var(--bg-size) 100%;
-  animation: move-bg 8s infinite linear;
+              );
 }
 
 
@@ -152,5 +151,14 @@ body {
     opacity: 1;
     position: relative;
     top: 0px;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
