@@ -102,7 +102,7 @@ body {
   color: black;
   line-height: 28px;
   word-spacing: 1.7px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.05px;
   font-family: 'Inter', sans-serif;
   color: rgb(249, 96, 96);
   background: rgba(249, 96, 96, 0.2);
@@ -117,7 +117,7 @@ body {
 }
 
 .link-button:hover {
-  background: rgba(249, 96, 96, 0.4);
+  background: rgba(249, 96, 96, 0.1);
 }
 
 
