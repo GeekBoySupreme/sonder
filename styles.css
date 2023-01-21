@@ -102,32 +102,26 @@ body {
   color: black;
   line-height: 28px;
   word-spacing: 1.7px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.05px;
   font-family: 'Inter', sans-serif;
-  --color-one: rgb(255, 170, 127);
-  --color-two: rgb(249, 96, 96);
-  background: linear-gradient(
-                90deg,
-                var(--color-one),
-                var(--color-two)
-              );
-
-  padding: 16px 28px;
+  color: rgb(249, 96, 96);
+  background: rgba(249, 96, 96, 0.05);
+  border: 1px solid rgba(249, 96, 96, 0.08);
+  padding: 12px 22px;
   font-weight: 400;
-  border-radius: 2px;
+  border-radius: 4px;
   text-decoration: none;
   margin-top: 4px;
-  font-weight : 400;
+  font-weight: 400;
+  transition: all 0.2s ease-out
 }
 
 .link-button:hover {
-  --color-one: rgb(193, 127, 255);
-  --color-two: rgb(96, 137, 249);
-  background: linear-gradient(
-                90deg,
-                var(--color-two),
-                var(--color-one)
-              );
+  background: rgba(249, 144, 96, 0.1);
+  border: 1px solid rgba(249, 144, 96, 0.08);
+  color: rgb(249, 142, 96);
+  transform: scale(1.05);
+  box-shadow: 0px 0px 30px rgba(249, 96, 96, 0.1);
 }
 
 
@@ -160,3 +154,7 @@ body {
     opacity: 1;
   }
 }
+
+
+
+
